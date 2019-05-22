@@ -345,6 +345,33 @@ fieldset[disabled] .btn-theme {
   text-align: center;
 }
 
+.comment {
+  padding-bottom: 0 !important;
+}
+
+.centrDiv {
+  text-align: center;
+}
+
+.tekstTemnee {
+  color: #9B9DA6 !important;
+}
+
+.contentLider {
+  padding-top: 50px !important;
+  padding-bottom: 30px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
 .photo::after {
   content: '';
 }
@@ -368,12 +395,17 @@ fieldset[disabled] .btn-theme {
   font-size: 11px;
   padding: 5px 10px;
   border: 1px solid #8DC83D;
+  border-radius: 4px;
 }
 
 
 @media (max-width:768px) {
   .pricing {
     margin-top: 0
+  }
+
+  .service {
+    height: auto !important;
   }
 }
 
@@ -382,6 +414,8 @@ fieldset[disabled] .btn-theme {
   padding-bottom: 110px;
   margin-top: 10px
 }
+
+
 
 @media (max-width:768px) {
   .pricing.pricing-active {
@@ -1230,8 +1264,8 @@ fieldset[disabled] .btn-theme {
 }
 
 .content {
-  padding-top: 40px;
-  padding-bottom: 40px
+  padding-top: 10px;
+  padding-bottom: 10px
 }
 
 .content-sm {
