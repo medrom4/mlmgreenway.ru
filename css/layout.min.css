@@ -362,6 +362,13 @@ fieldset[disabled] .btn-theme {
   padding-bottom: 30px !important;
 }
 
+body > div.parallax-window > div > p {
+	color: #fff;
+}
+
+.zapros-footer{
+	margin-top: 50px !important;
+}
 
 
 

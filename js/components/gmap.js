@@ -30,9 +30,9 @@ window.initMap = function() {
 
   var customMapTypeId = 'custom_style';
 
-  var brooklyn = {lat: 52.4220572, lng: 30.8998576};
+  var brooklyn = {lat: 52.426527, lng: 31.006835};
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 6,
+    zoom: 12,
     scrollwheel: false,
     streetViewControl: false,
     mapTypeControl: false,
@@ -40,33 +40,9 @@ window.initMap = function() {
     mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
     }
-  });
+	});
+	
 
-  var contentString = '<div id="content">'+
-    '<div id="siteNotice">'+
-    '</div>'+
-    '<h1 id="firstHeading" class="firstHeading">Brooklyn</h1>'+
-    '<div id="bodyContent">'+
-    '<p>277 Bedford Avenue, <br> Brooklyn, NY 11211, <br> New York, USA</p>'+
-    '</div>'+
-    '</div>';
-
-  var infowindow = new google.maps.InfoWindow({
-    content: contentString,
-    maxWidth: 300
-  });
-
-  var marker = new google.maps.Marker({
-    map: map,
-    clickable: true,
-    icon: image,
-    title: 'Brooklyn',
-    position: brooklyn
-  });
-
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
 
   map.mapTypes.set(customMapTypeId, customMapType);
   map.setMapTypeId(customMapTypeId);
