@@ -96,8 +96,12 @@ html a {
 p {
   font-size: 13px;
   font-weight: 400;
-  color: #DCDCDC;
+  color: #9E9E9E;
   margin-bottom: 15px
+}
+
+.sliderPcolor {
+	color: #fff;
 }
 
 em,
