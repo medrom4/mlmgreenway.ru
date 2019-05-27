@@ -11,8 +11,8 @@
   <meta content="" name="description" />
   <meta content="" name="author" />
 
-	<!-- GLOBAL MANDATORY STYLES -->
-	<link rel="shortcut icon" href="img/Greenways.png" type="image/png">
+  <!-- GLOBAL MANDATORY STYLES -->
+  <link rel="shortcut icon" href="img/Greenways.png" type="image/png">
   <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -75,7 +75,8 @@
   <!--========== END HEADER ==========-->
 
   <!--========== PARALLAX ==========-->
-  <div class="parallax-window" data-parallax="scroll" data-image-src="img/1920x1080/adult-business-deal-collaboration-1376864.jpg">
+  <div class="parallax-window" data-parallax="scroll"
+    data-image-src="img/1920x1080/adult-business-deal-collaboration-1376864.jpg">
     <div class="parallax-content container">
       <h1 class="carousel-title">О компании</h1>
     </div>
@@ -202,15 +203,23 @@
             <!-- End List -->
           </div>
 
-          <div class="col-sm-6 sm-margin-b-30">
-            <h2 class="color-white">Запрос на сотрудничество</h2>
-            <input type="text" class="form-control footer-input margin-b-20" placeholder="Ваше имя" required>
-            <input type="email" class="form-control footer-input margin-b-20" placeholder="Почта" required>
-            <input type="text" class="form-control footer-input margin-b-20" placeholder="Телефон" required>
-            <textarea class="form-control footer-input margin-b-30" rows="6" placeholder="Ваш текст"
-              required></textarea>
-            <button type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Отправить</button>
-          </div>
+          <form class="col-sm-6 sm-margin-b-30">
+
+              <!-- Hidden Required Fields -->
+              <input type="hidden" name="project_name" value="Site Name">
+              <input type="hidden" name="admin_email" value="medikroma@gmail.com">
+              <input type="hidden" name="form_subject" value="Запрос на сотрудничество.">
+              <!-- END Hidden Required Fields -->
+  
+              <h2 class="color-white">Запрос на сотрудничество</h2>
+              <input type="text" name="Имя" class="form-control footer-input margin-b-20" placeholder="Ваше имя" required>
+              <input type="text" name="E-mail" class="form-control footer-input margin-b-20" placeholder="Почта" required>
+              <input type="text" name="Телефон" class="form-control footer-input margin-b-20" placeholder="Телефон"
+                required>
+              <textarea name="Текстовое сообщение" class="form-control footer-input margin-b-30" rows="6"
+                placeholder="Ваш текст" required></textarea>
+              <button type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Отправить</button>
+            </form>
         </div>
         <!--// end row -->
       </div>
@@ -239,22 +248,26 @@
 
   <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
   <!-- CORE PLUGINS -->
-	<script src="vendor/jquery.min.js"></script>
-	<script src="vendor/jquery-migrate.min.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="emailScript.js"></script>
 
-	<!-- PAGE LEVEL PLUGINS -->
-	<script src="vendor/jquery.easing.js"></script>
-	<script src="vendor/jquery.back-to-top.js"></script>
-	<script src="vendor/jquery.smooth-scroll.js"></script>
-	<script src="vendor/jquery.wow.min.js"></script>
-	<script src="vendor/jquery.parallax.min.js"></script>
-	<script src="vendor/swiper/js/swiper.jquery.min.js"></script>
 
-	<!-- PAGE LEVEL SCRIPTS -->
-	<script src="js/layout.min.js"></script>
-	<script src="js/components/swiper.min.js"></script>
-	<script src="js/components/wow.min.js"></script>
+  <script src="vendor/jquery.min.js"></script>
+  <script src="vendor/jquery-migrate.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- PAGE LEVEL PLUGINS -->
+  <script src="vendor/jquery.easing.js"></script>
+  <script src="vendor/jquery.back-to-top.js"></script>
+  <script src="vendor/jquery.smooth-scroll.js"></script>
+  <script src="vendor/jquery.wow.min.js"></script>
+  <script src="vendor/jquery.parallax.min.js"></script>
+  <script src="vendor/swiper/js/swiper.jquery.min.js"></script>
+
+  <!-- PAGE LEVEL SCRIPTS -->
+  <script src="js/layout.min.js"></script>
+  <script src="js/components/swiper.min.js"></script>
+  <script src="js/components/wow.min.js"></script>
 
 </body>
 <!-- END BODY -->
